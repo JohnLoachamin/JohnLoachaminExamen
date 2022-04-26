@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JohnLoachaminExamen.logincs">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" Margin="0,80,0,50"></Image>
+            <Entry Placeholder="Usuario" x:Name="txtUsuario" Margin="20,0,20,20"></Entry>
+            <Entry Placeholder="Contraseña" x:Name="txtContrasenia" IsPassword="True" Margin="20,0,20,20"></Entry>
+            <Button Text="Ingresar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" CornerRadius="18" BackgroundColor="#2196F3" TextColor="White" Margin="20,0,20,0"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

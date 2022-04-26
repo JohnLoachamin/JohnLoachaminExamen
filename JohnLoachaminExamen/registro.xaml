@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JohnLoachaminExamen.registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label x:Name="lblNombreUsuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="22"/>
+            </Frame>
+            <Label Text="*Importante: El costo del curso es de 1800$" FontSize="18" Margin="20,10,0,0"></Label>
+            <Grid Margin="20,35,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Row="0"  Text="Ingrese su nombre:" />
+                <Entry Grid.Column="1" Grid.Row="0" x:Name="txtNombre" Placeholder="Ej. Juan"></Entry>
+
+                <Label Grid.Row="1"  Text="Ingrese Monto inicial:" />
+                <Entry Grid.Column="1" Grid.Row="1" x:Name="txtInicial" Placeholder="Ej. 1000" Keyboard="Numeric"></Entry>
+
+              
+            </Grid>
+            <Button Text="Calcular" x:Name="btnCaulcular" Clicked="btnCaulcular_Clicked" CornerRadius="18" BackgroundColor="Green" TextColor="White" Margin="20,0,20,0"></Button>
+            <Label x:Name="lblCuotas" FontSize="20" TextColor="Green" Margin="20,10,0,0"></Label>
+          
+            <Grid Margin="20,0,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="2"  Text="3 cuotas mensual de: $" />
+                <Entry Grid.Column="1" Grid.Row="2" x:Name="txtMensual" IsReadOnly="True" Keyboard="Numeric"></Entry>
+            </Grid>
+            <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked" CornerRadius="18"  BackgroundColor="#2196F3" TextColor="White" Margin="20,0,20,0"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
